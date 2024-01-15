@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
 </head>
 <body>
@@ -236,7 +237,107 @@
     </section>
 
 
+    <!-- Testimonial Section -->
 
+    <section class="container testimonials__container mySwiper">
+        <h2>Student Testimonials</h2>
+        <div class="swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar1.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>John Doe</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cupiditate dolore est in rem aspernatur. Voluptates eius facilis impedit dolorum debitis vero laboriosam tempore aliquam!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar2.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>John Doe</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cupiditate dolore est in rem aspernatur. Voluptates eius facilis impedit dolorum debitis vero laboriosam tempore aliquam!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar3.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>John Doe</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cupiditate dolore est in rem aspernatur. Voluptates eius facilis impedit dolorum debitis vero laboriosam tempore aliquam!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar4.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>John Doe</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cupiditate dolore est in rem aspernatur. Voluptates eius facilis impedit dolorum debitis vero laboriosam tempore aliquam!
+                    </p>
+                </div>
+            </article>
+
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/avatar5.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <h5>John Doe</h5>
+                    <small>Student</small>
+                </div>
+                <div class="testimonial__body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus cupiditate dolore est in rem aspernatur. Voluptates eius facilis impedit dolorum debitis vero laboriosam tempore aliquam!
+                    </p>
+                </div>
+            </article>
+        </div>
+        <div class="swiper-pagination"></div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+
+          breakpoints: {
+            600: {
+                slidesPerView:2
+            }
+          }
+        });
+      </script>
+    
 </body>
 </html>

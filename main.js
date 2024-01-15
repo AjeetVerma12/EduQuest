@@ -18,3 +18,4 @@ faqs.forEach(faq => {
         }
     })
 })
+
