@@ -111,6 +111,12 @@ nav {
     z-index: 11;
 }
 
+/* Navbar scrolling changes */
+.window-scroll {
+    background: var(--color-primary);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.2);
+}
+
 .nav__container {
     height: 5rem;
     display: flex;
@@ -231,3 +237,6 @@ header {
 .category p {
     font-size: 0.85rem;
 }
+
+/* courses section */
+
